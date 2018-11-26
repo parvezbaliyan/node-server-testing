@@ -49,7 +49,7 @@ hbs.registerHelper('Abc',(text) => {
 
 app.get('/', (req, res) => {
     res.render('home.hbs', {
-        welcomeMessage: 'Welcome to my first static website',
+        welcomeMessage: 'Welcome to parvez pagalpanti',
         currentYear: new Date().getFullYear()
     })
 
@@ -57,15 +57,15 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     //res.send("hi parvez how r u")
     res.render('about.hbs', {
-        pageTitle: 'myPagessss',
+        pageTitle: 'Nothing',
         currentYear: new Date().getFullYear()
     })
 })
 
 app.get('/baddata', (req, res) => {
     res.send({
-        name: 'parvez',
-        errorMessage: "ohh no"
+        name: 'parvez baliyan',
+        errorMessage: "o shit"
     })
 })
 
