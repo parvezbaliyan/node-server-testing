@@ -1,7 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');//this is used for renderenig different page based upon the different conditions
 const fs=require('fs');
-const port=process.env.port||3000;
+const port=process.env.PORT||3000;
 var app = express();
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
